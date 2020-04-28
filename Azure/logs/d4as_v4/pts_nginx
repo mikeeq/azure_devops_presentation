@@ -1,0 +1,7 @@
+# phoronix-test-suite run pts/nginx
+
+NGINX Benchmark 1.9.9:
+    pts/nginx-1.2.2
+    Test 1 of 1
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 11 Minutes [14:49 UTC]

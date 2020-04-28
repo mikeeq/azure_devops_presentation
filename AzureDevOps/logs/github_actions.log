@@ -1,0 +1,63 @@
+# https://github.com/mikeeq/mbp-fedora/runs/613681456?check_suite_focus=true#step:3:4
+
+2020-04-23T23:17:20.1285592Z ===]> Info: Print information about agent...
+2020-04-23T23:17:20.1285866Z
+2020-04-23T23:17:20.1286138Z
+2020-04-23T23:17:20.1291909Z ===]> Info: uname -a
+2020-04-23T23:17:20.1299566Z Linux fv-az54 5.0.0-1035-azure #37-Ubuntu SMP Wed Mar 18 11:21:35 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+2020-04-23T23:17:20.1301827Z
+2020-04-23T23:17:20.1302001Z
+2020-04-23T23:17:20.1320015Z ===]> Info: CPU threads: 2
+2020-04-23T23:17:20.1347889Z ===]> Info: CPU model name	: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+2020-04-23T23:17:20.1348109Z ===]> Info: CPU freq:
+2020-04-23T23:17:20.1358392Z cpu MHz		: 2294.688
+2020-04-23T23:17:20.1358887Z cpu MHz		: 2294.688
+2020-04-23T23:17:20.1361797Z
+2020-04-23T23:17:20.1362137Z
+2020-04-23T23:17:21.1337873Z ===]> Info: Egress Public IP: 13.92.116.29
+2020-04-23T23:17:21.1340109Z
+2020-04-23T23:17:21.1341436Z ===]> Info: df -h
+2020-04-23T23:17:21.1341572Z
+2020-04-23T23:17:21.1381375Z Filesystem      Size  Used Avail Use% Mounted on
+2020-04-23T23:17:21.1384376Z ===]> Info: free -m
+2020-04-23T23:17:21.1384585Z udev            3.4G     0  3.4G   0% /dev
+2020-04-23T23:17:21.1387443Z tmpfs           695M  956K  694M   1% /run
+2020-04-23T23:17:21.1387905Z /dev/sda1        84G   71G   13G  86% /
+2020-04-23T23:17:21.1388037Z tmpfs           3.4G  8.0K  3.4G   1% /dev/shm
+2020-04-23T23:17:21.1388121Z tmpfs           5.0M     0  5.0M   0% /run/lock
+2020-04-23T23:17:21.1388226Z tmpfs           3.4G     0  3.4G   0% /sys/fs/cgroup
+2020-04-23T23:17:21.1388335Z /dev/loop0       40M   40M     0 100% /snap/hub/43
+2020-04-23T23:17:21.1388438Z /dev/loop1       94M   94M     0 100% /snap/core/8935
+2020-04-23T23:17:21.1388541Z /dev/sda15      105M  3.6M  101M   4% /boot/efi
+2020-04-23T23:17:21.1388824Z /dev/sdb1        14G   41M   13G   1% /mnt
+2020-04-23T23:17:21.1389132Z /dev/loop2       94M   94M     0 100% /snap/core/9066
+2020-04-23T23:17:21.1389189Z
+2020-04-23T23:17:21.1389250Z
+2020-04-23T23:17:21.1688455Z               total        used        free      shared  buff/cache   available
+2020-04-23T23:17:21.1688621Z Mem:           6945         582        5106          26        1256        6034
+2020-04-23T23:17:21.1688738Z Swap:          8191           0        8191
+2020-04-23T23:17:21.1693648Z ===]> Info: w
+2020-04-23T23:17:21.1693732Z
+2020-04-23T23:17:21.1694768Z
+2020-04-23T23:17:21.1839469Z  23:17:21 up 0 min,  0 users,  load average: 2.64, 0.81, 0.28
+2020-04-23T23:17:21.1841033Z USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+2020-04-23T23:17:21.1844737Z ===]> Info: Top 5 processes sorted by CPU usage...
+2020-04-23T23:17:21.1844830Z
+2020-04-23T23:17:21.1844874Z
+2020-04-23T23:17:21.1920418Z USER       UID    PID %CPU %MEM COMMAND                     CMD
+2020-04-23T23:17:21.1921001Z runner    1001   2613 15.5  1.4 /home/runner/runners/2.169. /home/runner/runners/2.169.1/bin/Runner.Worker spawnclient 104 107
+2020-04-23T23:17:21.1921407Z runner    1001   2595 10.5  1.4 /home/runner/runners/2.169. /home/runner/runners/2.169.1/bin/Runner.Listener run
+2020-04-23T23:17:21.1921834Z root         0      1  6.5  0.1 /sbin/init                  /sbin/init
+2020-04-23T23:17:21.1922346Z root         0   2432  4.2  0.4 /usr/lib/snapd/snapd        /usr/lib/snapd/snapd
+2020-04-23T23:17:21.1923846Z root         0   1240  4.1  1.1 /opt/runner/provisioner/pro /opt/runner/provisioner/provisioner --agentdirectory /home/runner/runners --settings /opt/runner/provisioner/.settings
+2020-04-23T23:17:21.1926558Z ===]> Info: Top 5 processes sorted by MEM usage...
+2020-04-23T23:17:21.1926652Z
+2020-04-23T23:17:21.1927032Z
+2020-04-23T23:17:21.2005962Z USER       UID    PID %CPU %MEM COMMAND                     CMD
+2020-04-23T23:17:21.2006160Z runner    1001   2613 15.5  1.4 /home/runner/runners/2.169. /home/runner/runners/2.169.1/bin/Runner.Worker spawnclient 104 107
+2020-04-23T23:17:21.2006571Z runner    1001   2595 10.5  1.4 /home/runner/runners/2.169. /home/runner/runners/2.169.1/bin/Runner.Listener run
+2020-04-23T23:17:21.2007207Z root         0   1240  4.1  1.1 /opt/runner/provisioner/pro /opt/runner/provisioner/provisioner --agentdirectory /home/runner/runners --settings /opt/runner/provisioner/.settings
+2020-04-23T23:17:21.2007734Z root         0   1137  0.2  0.8 php-fpm: master process (/e php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+2020-04-23T23:17:21.2008028Z root         0   1241  0.8  0.8 /usr/bin/dockerd -H fd://   /usr/bin/dockerd -H fd://
+2020-04-23T23:17:21.2012785Z
+2020-04-23T23:17:21.2015486Z

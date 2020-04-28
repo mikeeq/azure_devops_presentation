@@ -1,0 +1,169 @@
+# lshw
+nhsapp-dsv4-test
+    description: Desktop Computer
+    product: Virtual Machine (None)
+    vendor: Microsoft Corporation
+    version: Hyper-V UEFI Release v4.0
+    serial: 0000-0009-8991-6123-1826-7651-31
+    width: 64 bits
+    capabilities: smbios-3.1.1 dmi-3.1.1 smp vsyscall32
+    configuration: boot=normal chassis=desktop family=Virtual Machine sku=None uuid=B1E26089-5A3D-4B45-BB17-9E035C89F420
+  *-core
+       description: Motherboard
+       product: Virtual Machine
+       vendor: Microsoft Corporation
+       physical id: 0
+       version: Hyper-V UEFI Release v4.0
+       serial: 0000-0013-4814-1774-6831-5044-16
+       slot: Virtual Machine
+     *-firmware
+          description: BIOS
+          vendor: Microsoft Corporation
+          physical id: 0
+          version: Hyper-V UEFI Release v4.0
+          date: 03/12/2019
+          size: 1MiB
+          capabilities: acpi uefi virtualmachine
+     *-cpu
+          description: CPU
+          product: AMD EPYC 7452 32-Core Processor
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 4
+          bus info: cpu@0
+          version: AMD EPYC 7452 32-Core Processor
+          serial: None
+          slot: None
+          size: 2350MHz
+          capacity: 3350MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp x86-64 rep_good nopl cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves xsaveerptr arat umip rdpid
+          configuration: cores=4 enabledcores=4 threads=2
+     *-memory
+          description: System Memory
+          physical id: 6
+          slot: System board or motherboard
+          size: 16GiB
+        *-bank:0
+             product: None
+             vendor: Microsoft Corporation
+             physical id: 0
+             serial: None
+             slot: M0001
+             size: 1GiB
+        *-bank:1
+             product: None
+             vendor: Microsoft Corporation
+             physical id: 1
+             serial: None
+             slot: M0002
+             size: 15GiB
+     *-network
+          description: Ethernet interface
+          product: MT27710 Family [ConnectX-4 Lx Virtual Function]
+          vendor: Mellanox Technologies
+          physical id: 2
+          bus info: pci@0001:00:02.0
+          logical name: eth1
+          version: 80
+          serial: 00:0d:3a:a8:de:ab
+          width: 64 bits
+          clock: 33MHz
+          capabilities: pciexpress msix bus_master cap_list ethernet physical autonegotiation
+          configuration: autonegotiation=off broadcast=yes driver=mlx5_core driverversion=5.0-0 firmware=14.25.8100 (MSF0010110035) latency=0 link=yes multicast=yes slave=yes
+          resources: iomemory:f0-ef irq:0 memory:fe0000000-fe00fffff
+     *-pnp00:00
+          product: PnP device PNP0501
+          physical id: 1
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:01
+          product: PnP device PNP0501
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=serial
+     *-pnp00:02
+          product: PnP device PNP0b00
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-scsi
+          physical id: 7
+          logical name: scsi0
+        *-disk:0
+             description: SCSI Disk
+             product: Virtual Disk
+             vendor: Msft
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: 1.0
+             size: 30GiB (32GB)
+             capabilities: gpt-1.00 partitioned partitioned:gpt
+             configuration: ansiversion=5 guid=52389927-bc40-4d18-9504-16eeae234022 logicalsectorsize=512 sectorsize=4096
+           *-volume:0
+                description: EXT4 volume
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@0:0.0.0,1
+                logical name: /dev/sda1
+                logical name: /
+                version: 1.0
+                serial: 31678e16-eccd-40f6-9177-42e7c0fd9de3
+                size: 29GiB
+                capacity: 29GiB
+                capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                configuration: created=2020-03-31 03:25:17 filesystem=ext4 label=cloudimg-rootfs lastmountpoint=/ modified=2020-03-31 03:44:40 mount.fstype=ext4 mount.options=rw,relatime,discard mounted=2020-04-18 12:37:25 state=mounted
+           *-volume:1
+                description: BIOS Boot partition
+                vendor: EFI
+                physical id: e
+                bus info: scsi@0:0.0.0,14
+                logical name: /dev/sda14
+                serial: 1f264921-fa3c-4f19-b80f-d2f23da2a0aa
+                capacity: 4095KiB
+                capabilities: nofs
+           *-volume:2
+                description: Windows FAT volume
+                vendor: mkfs.fat
+                physical id: f
+                bus info: scsi@0:0.0.0,15
+                logical name: /dev/sda15
+                logical name: /boot/efi
+                version: FAT32
+                serial: 8311-56ab
+                size: 105MiB
+                capacity: 105MiB
+                capabilities: boot fat initialized
+                configuration: FATs=2 filesystem=fat label=UEFI mount.fstype=vfat mount.options=rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro,discard state=mounted
+        *-disk:1
+             description: SCSI Disk
+             product: Virtual Disk
+             vendor: Msft
+             physical id: 0.0.1
+             bus info: scsi@0:0.0.1
+             logical name: /dev/sdb
+             version: 1.0
+             size: 32GiB (34GB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 logicalsectorsize=512 sectorsize=4096 signature=8960e2b1
+           *-volume
+                description: EXT4 volume
+                vendor: Linux
+                physical id: 1
+                bus info: scsi@0:0.0.1,1
+                logical name: /dev/sdb1
+                logical name: /mnt
+                version: 1.0
+                serial: 10687907-777c-44ba-86ef-dbd34e56fd75
+                size: 31GiB
+                capacity: 31GiB
+                capabilities: primary journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                configuration: created=2020-04-18 12:34:28 filesystem=ext4 modified=2020-04-18 12:37:38 mount.fstype=ext4 mount.options=rw,relatime mounted=2020-04-18 12:37:38 state=mounted
+  *-network
+       description: Ethernet interface
+       physical id: 1
+       logical name: eth0
+       serial: 00:0d:3a:a8:de:ab
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=hv_netvsc duplex=full firmware=N/A ip=10.3.0.4 link=yes multicast=yes

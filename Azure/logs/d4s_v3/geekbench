@@ -1,0 +1,28 @@
+# https://browser.geekbench.com/v5/cpu/1901440
+
+
+819
+Single-Core Score
+1779
+Multi-Core Score
+
+
+  Running Gathering system information
+System Information
+  Operating System              Ubuntu 20.04 LTS 5.4.0-1010-azure x86_64
+  Model                         Microsoft Corporation Virtual Machine
+  Motherboard                   Microsoft Corporation Virtual Machine
+  BIOS                          Microsoft Corporation Hyper-V UEFI Release v2.0
+
+Processor Information
+  Name                          Intel Xeon E5-2673 v3
+  Topology                      1 Processor, 2 Cores, 4 Threads
+  Identifier                    GenuineIntel Family 6 Model 63 Stepping 2
+  Base Frequency                2.39 GHz
+  L1 Instruction Cache          32.0 KB x 2
+  L1 Data Cache                 32.0 KB x 2
+  L2 Cache                      256 KB x 2
+  L3 Cache                      30.0 MB
+
+Memory Information
+  Size                          15.6 GB

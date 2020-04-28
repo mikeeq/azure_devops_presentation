@@ -1,0 +1,63 @@
+# https://dev.azure.com/nhsapp/NHS%20App/_build/results?buildId=8155&view=logs&j=46d68182-90a1-5651-c618-877729e79262&t=582e5edd-b209-5e2d-ee48-99597d748e20&l=18
+
+2020-04-23T10:45:36.9824365Z ===]> Info: Print information about agent...
+2020-04-23T10:45:36.9825275Z ===]> Info: uname -a
+2020-04-23T10:45:36.9825561Z
+2020-04-23T10:45:36.9825788Z
+2020-04-23T10:45:36.9826499Z Linux fv-az50 5.0.0-1035-azure #37-Ubuntu SMP Wed Mar 18 11:21:35 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+2020-04-23T10:45:36.9826918Z
+2020-04-23T10:45:36.9827146Z
+2020-04-23T10:45:36.9827474Z ===]> Info: CPU threads: 2
+2020-04-23T10:45:36.9827899Z ===]> Info: CPU model name	: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
+2020-04-23T10:45:36.9828308Z ===]> Info: CPU freq:
+2020-04-23T10:45:36.9828659Z cpu MHz		: 2095.196
+2020-04-23T10:45:36.9828978Z cpu MHz		: 2095.196
+2020-04-23T10:45:36.9829230Z
+2020-04-23T10:45:36.9829486Z
+2020-04-23T10:45:36.9830945Z ===]> Info: Egress Public IP: 51.140.61.36
+2020-04-23T10:45:36.9832196Z ===]> Info: df -h
+2020-04-23T10:45:36.9832351Z
+2020-04-23T10:45:36.9832642Z
+2020-04-23T10:45:36.9832896Z Filesystem      Size  Used Avail Use% Mounted on
+2020-04-23T10:45:36.9833155Z udev            3.4G     0  3.4G   0% /dev
+2020-04-23T10:45:36.9833424Z tmpfs           695M  956K  694M   1% /run
+2020-04-23T10:45:36.9833787Z /dev/sda1        84G   72G   12G  86% /
+2020-04-23T10:45:36.9834074Z tmpfs           3.4G  8.0K  3.4G   1% /dev/shm
+2020-04-23T10:45:36.9834349Z tmpfs           5.0M     0  5.0M   0% /run/lock
+2020-04-23T10:45:36.9834855Z tmpfs           3.4G     0  3.4G   0% /sys/fs/cgroup
+2020-04-23T10:45:36.9835237Z /dev/loop0       94M   94M     0 100% /snap/core/8935
+2020-04-23T10:45:36.9835524Z /dev/loop1       40M   40M     0 100% /snap/hub/43
+2020-04-23T10:45:36.9835769Z /dev/sda15      105M  3.6M  101M   4% /boot/efi
+2020-04-23T10:45:36.9836125Z /dev/sdb1        14G   41M   13G   1% /mnt
+2020-04-23T10:45:36.9836389Z
+2020-04-23T10:45:36.9836626Z
+2020-04-23T10:45:36.9836953Z ===]> Info: free -m
+2020-04-23T10:45:36.9837351Z               total        used        free      shared  buff/cache   available
+2020-04-23T10:45:36.9837780Z Mem:           6945         619        5131          26        1195        5997
+2020-04-23T10:45:36.9838184Z Swap:          8191           0        8191
+2020-04-23T10:45:36.9838377Z
+2020-04-23T10:45:36.9838479Z
+2020-04-23T10:45:36.9838626Z ===]> Info: w
+2020-04-23T10:45:36.9838999Z  10:45:36 up 3 min,  0 users,  load average: 0.08, 0.25, 0.13
+2020-04-23T10:45:36.9839612Z USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+2020-04-23T10:45:36.9839898Z
+2020-04-23T10:45:36.9840186Z
+2020-04-23T10:45:36.9840419Z ===]> Info: Top 5 processes sorted by CPU usage...
+2020-04-23T10:45:36.9840794Z USER       UID    PID %CPU %MEM COMMAND                     CMD
+2020-04-23T10:45:36.9841449Z vsts      1001   2790 41.0  1.5 /home/vsts/agents/2.166.3/b /home/vsts/agents/2.166.3/bin/Agent.Worker spawnclient 114 117
+2020-04-23T10:45:36.9842162Z vsts      1001   2763 22.5  1.5 /home/vsts/agents/2.166.3/b /home/vsts/agents/2.166.3/bin/Agent.Listener run
+2020-04-23T10:45:36.9843599Z vsts      1001   2872 15.0  0.4 /home/vsts/agents/2.166.3/e /home/vsts/agents/2.166.3/externals/node/bin/node /home/vsts/work/_tasks/Bash_6c731c3c-3c68-459a-a5c9-bde6e6595b5b/3.163.1/bash.js
+2020-04-23T10:45:36.9844206Z root         0      1  1.6  0.1 /sbin/init                  /sbin/init
+2020-04-23T10:45:36.9844935Z root         0   1545  0.9  0.3 python3 -u bin/WALinuxAgent python3 -u bin/WALinuxAgent-2.2.46-py2.7.egg -run-exthandlers
+2020-04-23T10:45:36.9845313Z
+2020-04-23T10:45:36.9845446Z
+2020-04-23T10:45:36.9845673Z ===]> Info: Top 5 processes sorted by MEM usage...
+2020-04-23T10:45:36.9846068Z USER       UID    PID %CPU %MEM COMMAND                     CMD
+2020-04-23T10:45:36.9846612Z vsts      1001   2763 22.5  1.5 /home/vsts/agents/2.166.3/b /home/vsts/agents/2.166.3/bin/Agent.Listener run
+2020-04-23T10:45:36.9847166Z vsts      1001   2790 41.0  1.5 /home/vsts/agents/2.166.3/b /home/vsts/agents/2.166.3/bin/Agent.Worker spawnclient 114 117
+2020-04-23T10:45:36.9847665Z root         0   1228  0.7  1.1 /opt/vsts/provisioner/provi /opt/vsts/provisioner/provisioner
+2020-04-23T10:45:36.9848415Z root         0   1222  0.0  0.8 php-fpm: master process (/e php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+2020-04-23T10:45:36.9849169Z root         0   1232  0.2  0.7 /usr/bin/dockerd -H fd://   /usr/bin/dockerd -H fd://
+2020-04-23T10:45:36.9849506Z
+2020-04-23T10:45:36.9849640Z
+2020-04-23T10:45:36.9849765Z

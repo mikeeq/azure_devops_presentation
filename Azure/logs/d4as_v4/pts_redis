@@ -1,0 +1,7 @@
+# phoronix-test-suite run pts/redis
+
+Redis 5.0.5:
+    pts/redis-1.2.0 [Test: GET]
+    Test 1 of 1
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 4 Minutes [14:43 UTC]

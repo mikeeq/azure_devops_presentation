@@ -1,0 +1,117 @@
+# sysbench --test=cpu run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.17 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  1640.58
+
+General statistics:
+    total time:                          10.0003s
+    total number of events:              16408
+
+Latency (ms):
+         min:                                    0.60
+         avg:                                    0.61
+         max:                                    0.81
+         95th percentile:                        0.64
+         sum:                                 9998.06
+
+Threads fairness:
+    events (avg/stddev):           16408.0000/0.00
+    execution time (avg/stddev):   9.9981/0.00
+
+# sysbench --test=memory run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.17 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 54389776 (5438253.02 per second)
+
+53115.02 MiB transferred (5310.79 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              54389776
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.09
+         95th percentile:                        0.00
+         sum:                                 4454.69
+
+Threads fairness:
+    events (avg/stddev):           54389776.0000/0.00
+    execution time (avg/stddev):   4.4547/0.00
+
+# sysbench --test=fileio --file-test-mode=seqwr run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.17 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential write (creation) test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      0.00
+    writes/s:                     2330.91
+    fsyncs/s:                     2985.86
+
+Throughput:
+    read, MiB/s:                  0.00
+    written, MiB/s:               36.42
+
+General statistics:
+    total time:                          10.0378s
+    total number of events:              53247
+
+Latency (ms):
+         min:                                    0.01
+         avg:                                    0.19
+         max:                                   35.10
+         95th percentile:                        0.32
+         sum:                                 9994.12
+
+Threads fairness:
+    events (avg/stddev):           53247.0000/0.00
+    execution time (avg/stddev):   9.9941/0.00

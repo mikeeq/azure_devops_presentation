@@ -1,0 +1,53 @@
+# apt-get install -y  zip python git virtualenv build-essential python3-dev libdbus-glib-1-dev libgirepository1.0-dev libasound2-dev libpulse-dev gstreamer1.0-plugins-base libgstreamer-plugins-base1.0-dev gstreamer1.0-alsa
+
+apt-get install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+
+# phoronix-test-suite install pts/build-firefox
+# phoronix-test-suite install-dependencies pts/build-firefox
+
+# phoronix-test-suite debug-run pts/build-firefox
+# phoronix-test-suite run pts/build-firefox
+
+ap
+
+Phoronix Test Suite v9.4.1
+System Information
+
+
+  PROCESSOR:          AMD EPYC 7452 32-Core
+    Core Count:       2
+    Thread Count:     4
+    Extensions:       SSE 4.2 + AVX2 + AVX + RDRAND + FSGSBASE
+    Cache Size:       512 KB
+    Microcode:        0xffffffff
+
+  GRAPHICS:           hyperv_fb
+    Screen:           1152x864
+
+  MOTHERBOARD:        Microsoft Virtual Machine
+    BIOS Version:     Hyper-V UEFI v4.0
+    Network:          Mellanox MT27710
+
+  MEMORY:             1024 MB + 15360 MB
+
+  DISK:               32GB Virtual Disk + 34GB Virtual Disk
+    File-System:      ext4
+    Mount Options:    discard relatime rw
+    Disk Scheduler:   MQ-DEADLINE
+
+  OPERATING SYSTEM:   Ubuntu 19.10
+    Kernel:           5.3.0-1018-azure (x86_64)
+    Compiler:         GCC 9.2.1 20191008
+    System Layer:     microsoft
+    Security:         itlb_multihit: Not affected
+                      + l1tf: Not affected
+                      + mds: Not affected
+                      + meltdown: Not affected
+                      + spec_store_bypass: Mitigation of SSB disabled via prctl and seccomp
+                      + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization
+                      + spectre_v2: Mitigation of Full generic retpoline STIBP: disabled RSB filling
+                      + tsx_async_abort: Not affected
+
+    Would you like to save these test results (Y/n): Y
+    Enter a name for the result file: results_firefox
+    Enter a unique name to describe this test run / configuration: firefox_d4as_v4

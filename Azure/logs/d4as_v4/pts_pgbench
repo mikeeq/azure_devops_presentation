@@ -1,0 +1,6 @@
+# phoronix-test-suite run pts/pgbench
+PostgreSQL pgbench 12.0:
+    pts/pgbench-1.9.1 [Scaling: Buffer Test - Test: Normal Load - Mode: Read Write]
+    Test 1 of 1
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 37 Minutes [15:15 UTC]
